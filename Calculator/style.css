@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333333;
+    border: 1px solid black;
+    font-size: 2em;
+ }
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0% auto;
+    text-align: right;
+}
+.card{
+    box-shadow: 0 5px 10px 0 black;
+    border-radius: 5px;
+    padding: auto;
+    margin-top: 20px;
+}
+.flex-container-row{
+    display: flex;
+}
+.button{
+    flex-basis: 25%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+.button:hover{
+    font-weight: bold;
+}
+.double{
+    flex-basis: 50%;
+}
+.negative,.operator,.equal{
+    background-color: rgb(255, 68, 0);
+    color: white;
+}
+
+@media screen and (max-width: 300px) {
+    .button {
+        padding: 15px;
+    }
+ }
